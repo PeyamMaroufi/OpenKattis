@@ -1,5 +1,7 @@
 #include <iostream>
 
+/* Let say the number is 13 then the sum of the digits is 1+3 = 4.
+ * There are standard functions that calculates it for you */
 auto getResult(int x) -> int
 {
     int sum = 0;
