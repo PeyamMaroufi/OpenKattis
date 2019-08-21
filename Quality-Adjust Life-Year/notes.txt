@@ -1,0 +1,17 @@
+The Quality-Adjusted Life-Year (QALY) is a way to measure a person’s quality of life that
+includes both the quality and the quantity of life lived.
+The quality of life lived can be quantified as a number between 0 and 1. If someone is living
+with perfect health, the quality of life is 1. If someone is dead, then the quality of life is 0
+The quality of life may increase or decrease due to medical treatements, sickness, etc.
+
+The QALY for each period in which the quality of life is constant is simply the product of the
+quality of life and the length of the period (in years). We wish to know the amount of QALY accumulated
+by a person at the time of death, given the complete history of this person.
+
+Problem ID: qaly
+
+CPU Time limit: 1 second
+
+Memory limit: 1024 MB
+
+Difficulty: 1.2
