@@ -4,21 +4,16 @@ using namespace std;
 int main()
 {
     int megaByte_begin, N_month;
-    vector<int> megaByte_end;
     cin >> megaByte_begin;
     cin >> N_month;
-    int sum = megaByte_begin;
+    int sum = 0;
     for (auto i = 0; i < N_month; i++)
     {
-        int use;
-        cin >> use;
-        megaByte_end.push_back(use);
+        int monthly;
+        cin >> monthly;
+        sum += monthly;
     }
 
-    for (auto skit : megaByte_end)
-    {
-        sum = sum + (megaByte_begin - skit);
-    }
-    cout << sum << endl;
+    cout << megaByte_begin * (N_month + 1) -sum << endl;
     return 0;
 }
