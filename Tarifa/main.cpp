@@ -14,6 +14,6 @@ int main()
         sum += monthly;
     }
 
-    cout << megaByte_begin * (N_month + 1) -sum << endl;
+    cout << megaByte_begin * (N_month + 1) - sum << endl;
     return 0;
 }
