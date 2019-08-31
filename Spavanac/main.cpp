@@ -1,29 +1,33 @@
 #include <iostream>
 using namespace std;
 
-struct TIME
-{
-    int hour;
-    int minute;
-};
-auto timeMinus45(struct TIME t1) -> TIME
-{
-    TIME returnTime;
-    if (t1.minute < 60 && t1.minute >= 45)
-    {
-        returnTime.hour = t1.hour;
-        returnTime.minute = t1.minute - 45;
-    }
-    else if (t1.minute < 45)
-    {
-        returnTime.hour = t1.hour - 
-    }
-}
 int main()
 {
-    struct TIME t1, t2;
-    cin >> t1.hour >> t1.minute;
-    cout << timeMinus45(t1) << endl;
+    int h, m;
+    cin >> h >> m;
+    h--;
+    m -= 45;
+
+    /* What if the minutes go above 60? */
+    if (m < 0)
+    {
+        m += 60;
+    }
+    else if (m == 0)
+    {
+        m = 0;
+        h++;
+    }
+    else if (m > 0)
+    {
+        h++;
+    }
+
+    /* What if the time is 0:45? */
+    if (h < 0)
+        h += 24;
+
+    cout << h << " " << m << endl;
 
     return 0;
 }
